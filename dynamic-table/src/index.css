@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+table {
+  margin: 5rem auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 90%;
+  max-width: 80rem;
+}
+
+thead {
+  background: linear-gradient(135deg, #6A5ACD, #443C68);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+th,
+td {
+  padding: 1.5rem;
+  text-align: left;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+th {
+  border-right: 1px solid #eaeaea;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr {
+  background-color: #fff;
+  transition: background 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f0f0ff;
+}
+
+td {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+table caption {
+  margin: 2rem 0;
+  font-size: 1.8rem;
+  color: #443C68;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 1.2rem;
+  }
+
+  th, td {
+    padding: 1rem;
+    min-width: auto;
+  }
+
+  table caption {
+    font-size: 1.6rem;
+  }
+}
